@@ -8,12 +8,9 @@ public:
             } else {
                 days--;
                 sum = i;
-                if (days <= 0) {
-                    return false;
-                }
             }
         }
-        return true;
+        return days > 0;
     }
 
     int shipWithinDays(vector<int>& weights, int days) {
